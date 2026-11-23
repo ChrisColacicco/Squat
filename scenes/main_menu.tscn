@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://bu5r30hwwdof6"]
+
+[ext_resource type="Script" uid="uid://durcrdrgeyqge" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+
+[node name="MainMenu" type="Control" unique_id=1559961337]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l6cm7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1650628528]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=2025446374]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=776364386]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=418835856]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.13149942, 0.13149942, 0.13149942, 1)
+theme_override_font_sizes/font_size = 64
+text = "Squat"
+horizontal_alignment = 1
+
+[node name="EmptySpace" type="Control" parent="CenterContainer/VBoxContainer" unique_id=440006994]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="NewGameButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1806934351]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 52)
+layout_mode = 2
+theme_override_constants/h_separation = 20
+text = "New Game"
+
+[node name="ContinueButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1885369064]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 52)
+layout_mode = 2
+theme_override_constants/h_separation = 20
+text = "Continue"
+
+[node name="SettingsButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1763627961]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 52)
+layout_mode = 2
+theme_override_constants/h_separation = 20
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1800046632]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 52)
+layout_mode = 2
+theme_override_constants/h_separation = 20
+text = "Quit
+"
